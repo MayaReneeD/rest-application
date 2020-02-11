@@ -251,7 +251,8 @@
     align-items: center; 
     flex-direction: column;
     .buds{
-        text-align: center; 
+        text-align: center;
+        margin-bottom: 3rem;   
     }
     .button-rounded{
         background: #ed4852;
@@ -259,14 +260,15 @@
         display: inline-block;
         padding: 15px;
         border-radius: 30px;
-        margin-bottom: 100px; 
+        margin-bottom: 130px; 
        
 
     }
     .food-slider{
         width: 100%; 
-        max-width: 1200px;
+        max-width: 1400px;
         display: flex; 
+        margin-bottom: 2rem;
         .slide{
             width: 20%;
             position: relative; 
@@ -274,10 +276,10 @@
                 cursor: pointer;
                 &:hover{
                     .background{
-                        background: #ed4852; 
+                        background: rgb(201, 67, 67);  
                         transform: translate3d(0, -100px, 0);
                     }
-                    content{
+                    .content{
                         .food-title{
                             color: white; 
                         }
@@ -297,7 +299,7 @@
                     width: 100%;
                     z-index: 1;
                     position: absolute;
-                    transition: all .3s ease-in-out; 
+                    transition: transform .3s ease-in-out; 
             
                     
             }
@@ -338,4 +340,5 @@
         font-weight: 700;
         margin-bottom: 20px; 
     }
-}
+
+    }
